@@ -1,3 +1,7 @@
+//----------------------------------------------------------------------
+// PIMMINK EDIT - https://pimmink.nl
+//----------------------------------------------------------------------
+
 // Flexbox Mixins
 // http://philipwalton.github.io/solved-by-flexbox/
 // https://github.com/philipwalton/solved-by-flexbox
@@ -60,6 +64,7 @@
 // (Placeholder selectors for each type, for those who rather @extend)
 
 @mixin flexbox {
+  -js-display: flex;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -68,6 +73,7 @@
   display: flex;
 }
 
+
 %flexbox {
   @include flexbox;
 }
@@ -75,6 +81,7 @@
 //----------------------------------
 
 @mixin inline-flex {
+  -js-display: inline-flex;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -moz-inline-flex;
